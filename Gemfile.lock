@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: a7746b9576f9f035202defbf74ed437f86269121
+  specs:
+    faker (2.23.0)
+      i18n (>= 1.8.11, < 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -272,6 +279,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  faker!
   guard (= 2.18.0)
   guard-minitest (= 2.4.6)
   importmap-rails
