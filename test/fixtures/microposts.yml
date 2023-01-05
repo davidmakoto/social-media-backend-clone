@@ -3,7 +3,9 @@
 one:
   content: MyText
   user_id: 1
+  image: fixture_file_upload(Rails.root.join('test', 'fixtures', 'files', 'test_image.jpg'), 'image/jpg')
 
 two:
   content: MyText
   user_id: 1
+  image: fixture_file_upload(Rails.root.join('test', 'fixtures', 'files', 'test_image.jpg'), 'image/jpg')

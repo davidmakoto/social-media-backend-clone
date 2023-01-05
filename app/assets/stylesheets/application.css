@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+
+ .micropost-image {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   min-width: 800px;
+   max-width: 800px;
+ }
