@@ -2,7 +2,6 @@
 
 <p style="color: green"><%= notice %></p>
 
-<img class="logo" src="https://ih1.redbubble.net/image.759429924.9079/flat,750x,075,f-pad,750x1000,f8f8f8.u4.jpg" alt="Guy Fieri intense post">
 <%= image_tag "https://ih1.redbubble.net/image.759429924.9079/flat,750x,075,f-pad,750x1000,f8f8f8.u4.jpg", class: "logo" %>
 <h1 class="posts-header">Posts</h1>
 
@@ -12,9 +11,7 @@
 <div id="microposts">
   <% @microposts.each do |micropost| %>
     <%= render micropost %>
-    <p>
-      <%= link_to "Show this micropost", micropost %>
-    </p>
+    <%= button_to "Show Post", micropost_path(micropost), method: :get, class: 'accent-button'%>
   <% end %>
 </div>
 

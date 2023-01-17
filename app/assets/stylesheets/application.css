@@ -14,7 +14,11 @@
  *= require_self
  */
 
-
+#microposts {
+  text-align: center;
+  align-items: center;
+  background-color: aqua;
+}
  .micropost-image {
    display: block;
    margin-left: auto;
@@ -22,22 +26,77 @@
    min-width: 800px;
    max-width: 800px;
  }
+ .header {
+  background-color: orange;
+ }
+ .nav-bar {
+  font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #000;
+  background-color: rgb(213, 211, 211);
+  margin: 25px 25px 100px 100px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
  .posts-header {
   font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
    margin-top: 20px;
    margin-bottom: 20px;
  }
- .nav-bar {
+
+ .low-profile-button {
    font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
    font-size: 20px;
    color: #000;
    background-color: rgb(213, 211, 211);
  }
- .logo {
-   width: 50px;
-   height: 50px;
-   margin-top: 5px;
-   margin-bottom: 5px;
+ .default-button {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #FE6C6B;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
  }
- 
+.default-button:hover {background-color: #db5d5d}
+
+.default-button:active {
+  background-color: #FE6C6B;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.accent-button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #FDA4A5;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+ }
+.accent-button:hover {background-color: #ea9799}
+.accent-button:active {
+  background-color: #fb9395;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.user-controls {
+  float: right;
+}
