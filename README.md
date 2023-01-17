@@ -1,7 +1,11 @@
-# README
+# Sad Blog Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a sad full stack app modeled after instagram/twitter. The purpose of the app is to show off modern programming practices such as testing, docker, deployment, and authentication.
+
+## Live demo 
+
+## Running instructions:
+
 
 Things you may want to cover:
 
