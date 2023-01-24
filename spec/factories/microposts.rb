@@ -1,6 +1,6 @@
 FactoryBot.define do
     factory :micropost do
         content { "Lorem ipsum" }
-        user
+        # user
     end
 end
