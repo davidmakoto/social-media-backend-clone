@@ -1,7 +1,12 @@
 require "test_helper"
 
 class MicropostsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
   setup do
+    get'/users/sign_in'
+    sign_in users(:one)
+    post user_session_url
+
     @micropost = microposts(:one)
   end
 
@@ -17,7 +22,7 @@ class MicropostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create micropost" do
     assert_difference("Micropost.count") do
-      post microposts_url, params: { micropost: { content: @micropost.content, user_id: @micropost.user_id, image: @micropost.image } }
+      post microposts_url, params: { micropost: { content: @micropost.content, user_id: @micropost.user_id } }
     end
 
     assert_redirected_to micropost_url(Micropost.last)
