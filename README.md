@@ -1,6 +1,6 @@
 # Sad Blog Clone
 
-This project is a sad full stack app modeled after instagram/twitter. The purpose of the app is to show off modern programming practices such as validation, testing, docker, deployment, and authentication.
+This project is a bare bones full stack app modeled after instagram/twitter. The purpose of the app is to show off modern programming practices such as validation, testing, docker, deployment, and authentication.
 
 ## Live demo 
 https://tweetir.herokuapp.com/
