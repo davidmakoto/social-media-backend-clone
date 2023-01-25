@@ -10,30 +10,18 @@ https://tweetir.herokuapp.com/
 
 ## Running instructions:
 
+Navigate to parent directory
 
+```git clone https://github.com/davidmakoto/social-media-backend-clone.git && cd _```
 
-Things you may want to cover:
-
-* Ruby version 3.1.2
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-```rails db:setup```
-
-
-* Database initialization
-```rails db:migrate```
-
-* How to run the test suite
+if using [ruby version manager](https://rvm.io/rvm/)
+```rvm use 3.1.2 ```
+```bundle install ```
+```bin/rails db:setup```
+```bin/rails db:migrate ```
+``` ```
+## Testing
 ```rails test```
-
-* Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 ```main branch deploys to website```
-
-* ...
-"# rails-sample" 
