@@ -1,9 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: Faker::Name.first_name
-  email: Faker::Internet.email
+  username: name1
+  email: email1@gmail.com
 
 two:
-  name: Faker::Name.first_name
-  email: Faker::Internet.email
+  username: name2
+  email: email2@gmail.com
