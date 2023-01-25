@@ -33,3 +33,7 @@ bin/rails server
 
 ## Deployment instructions
 ```main branch deploys to website```
+
+
+### Resources used:
+Ruby on Rails Tutorial by Michael Hartl
