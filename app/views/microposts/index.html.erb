@@ -15,4 +15,5 @@
   <% end %>
 </div>
 
-<%= link_to "New micropost", new_micropost_path %>
+<!-- <%= link_to "New micropost", new_micropost_path %> -->
+<%= button_to "Create New Post", new_micropost_path, method: :get, class: 'accent-button' %>

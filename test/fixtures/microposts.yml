@@ -3,9 +3,12 @@
 one:
   content: MyText
   user_id: 1
-  image: fixture_file_upload(Rails.root.join('test', 'fixtures', 'files', 'test_image.jpg'), 'image/jpg')
+    after(:build) do |culture|
+      culture.attach.attach(io: File.open(Rails.root.join('test', 'fixtures', 'files', 'test_image.jpg')), filename: 'test_image.jpg', content_type: 'image/jpg')
+    end
 
 two:
   content: MyText
   user_id: 1
-  image: fixture_file_upload(Rails.root.join('test', 'fixtures', 'files', 'test_image.jpg'), 'image/jpg')
+      culture.attach.attach(io: File.open(Rails.root.join('test', 'fixtures', 'files', 'test_image.jpg')), filename: 'test_image.jpg', content_type: 'image/jpg')
+  end

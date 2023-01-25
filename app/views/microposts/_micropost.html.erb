@@ -5,7 +5,7 @@
   </p>
   <p>
     <strong>User:</strong>
-    <%= micropost.user_id %>
+    <%= micropost.user.email %>
   </p>
   <% if micropost.image.attached? %>
     <%= image_tag micropost.image, class: "micropost-image" %>
