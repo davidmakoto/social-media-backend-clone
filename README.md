@@ -27,7 +27,7 @@ bundle exec rails db:migrate
 bundle exec rails server
 ```
 ## Testing
-```rails test```
+```bundle exec rails test```
 
 ## Deployment instructions
 main branch deploys to website
