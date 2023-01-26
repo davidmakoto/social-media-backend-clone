@@ -1,5 +1,7 @@
 # Blog Clone
-[Live demo tweetir.herokuapp.com](https://tweetir.herokuapp.com/)
+<img src="https://github.com/davidmakoto/social-media-backend-clone/actions/workflows/rubyonrails.yml/badge.svg"> </img>
+
+Live demo: https://tweetir.herokuapp.com
 
 This project is a bare bones backend app modeled after instagram/twitter. The purpose of the app is to show off modern programming practices such as:
 * data validation (in [User/Microposts models](https://github.com/davidmakoto/social-media-backend-clone/tree/main/app/models)) 
