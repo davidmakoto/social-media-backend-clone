@@ -21,8 +21,9 @@ This project is a bare bones backend app modeled after instagram/twitter. The pu
 Navigate to parent directory
 
 ```bash
-git clone https://github.com/davidmakoto/social-media-backend-clone.git && cd _
-rvm use 3.1.2
+git clone https://github.com/davidmakoto/social-media-backend-clone.git
+cd social-media-backend-clone
+rvm install 3.1.2 && rvm use 3.1.2
 bundle install 
 bundle exec rails db:setup
 bundle exec rails db:migrate
