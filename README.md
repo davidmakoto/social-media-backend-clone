@@ -1,8 +1,6 @@
-
-## Live demo 
-https://tweetir.herokuapp.com/
-
 # Blog Clone
+[Live demo tweetir.herokuapp.com](https://tweetir.herokuapp.com/)
+
 This project is a bare bones backend app modeled after instagram/twitter. The purpose of the app is to show off modern programming practices such as:
 * data validation (in [User/Microposts models](https://github.com/davidmakoto/social-media-backend-clone/tree/main/app/models)) 
 * testing ([functional](https://github.com/davidmakoto/social-media-backend-clone/tree/main/test/controllers) and [unit](https://github.com/davidmakoto/social-media-backend-clone/blob/main/test/models/user_test.rb) tests for Users/Microposts)
