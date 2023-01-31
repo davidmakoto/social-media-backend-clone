@@ -7,4 +7,4 @@ local:
   root: <%= Rails.root.join("storage") %>
 
 production:
-  service: local
+  service: Disk
