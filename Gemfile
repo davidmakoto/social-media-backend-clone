@@ -27,8 +27,6 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-gem 'aws-sdk-rails', '~> 3.0'
-gem "aws-sdk-s3", '~> 1.0'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
