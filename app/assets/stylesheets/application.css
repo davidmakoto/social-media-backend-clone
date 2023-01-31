@@ -14,14 +14,23 @@
  *= require_self
  */
 
+:root{
+  --var-MainColor:rgb(245, 245, 245);
+  --main-accent-color:rgb(218, 229, 203);
+  --green-accent: hex(#9EA93F);
+  --yellow-accent: hex(#D0E666);
+  --blue-accent: hex(#558AAE);
+  --dark-accent: hex(#181F1C);
+}
+
 #microposts {
   text-align: center;
   align-items: center;
-  background-color: aqua;
+  background-color: var(--main-accent-color);
   margin: 25px 25px 100px 100px;
 }
  .header {
-  background-color: orange;
+  background-color: var(--var-MainColor);
  }
  .nav-bar {
   font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -93,4 +102,27 @@
 }
 .user-controls {
   float: right;
+}
+.new-post-form {
+  text-align: center;
+  align-items: center;
+  background-color: var(var-MainColor);
+  margin: 25px 25px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+.wrapper {
+  width:150px;
+  height:150px;
+  margin: 25px auto;
+  overflow: hidden;
+  border-radius:50%;
+  position: relative;
+}
+
+.wrapper img {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%)
 }
