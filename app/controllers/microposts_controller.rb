@@ -22,7 +22,6 @@ class MicropostsController < ApplicationController
   # POST /microposts or /microposts.json
   def create
     @micropost = Micropost.new(micropost_params)
-    @micropost.image.attach(params[:micropost][:image])
 
     respond_to do |format|
       if @micropost.save

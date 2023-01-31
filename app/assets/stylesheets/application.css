@@ -20,19 +20,6 @@
   background-color: aqua;
   margin: 25px 25px 100px 100px;
 }
-
- .micropost-image {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   min-width: 800px;
-   max-width: 800px;
- }
- @media screen and (max-width: 850px) {
-  .micropost-image {
-    min-width: 400px;
-  }
-}
  .header {
   background-color: orange;
  }
