@@ -1,7 +1,7 @@
 <header>
     <div class="header">
         <div class="nav-bar">
-            <%= image_tag "https://ih1.redbubble.net/image.759429924.9079/flat,750x,075,f-pad,750x1000,f8f8f8.u4.jpg", class: "logo" %>
+            <%= image_tag "/images/logo.svg", class: "logo" %>
 
             <div class="user-controls">
                 <p class="navbar-text float-right">
@@ -16,10 +16,10 @@
                     </strong>
                     </p>
                     <div class="self-avatar avatar wrapper">
-                        <img src="/default-avatar.webp" alt="avatar">
+                        <img src="/default-avatar.jpeg" alt="avatar">
                     </div>
                     <%= button_to(
-                        "View Profile",
+                        "Edit Profile",
                         edit_user_registration_path,
                         class: 'vomit-green-accent-btn',
                         method: :get
@@ -38,7 +38,7 @@
             </div>
         </div>
         <nav>
-            <%= button_to "Tweetir", posts_url , class: 'dark-accent-btn', method: :get %>            
+            <%= button_to "Home", posts_url , class: 'dark-accent-btn', method: :get %>            
         </nav>
     </div>
 </header>
