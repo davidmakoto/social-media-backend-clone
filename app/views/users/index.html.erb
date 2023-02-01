@@ -1,14 +1,15 @@
-<p style="color: green"><%= notice %></p>
+<%= image_tag "https://ih1.redbubble.net/image.759429924.9079/flat,750x,075,f-pad,750x1000,f8f8f8.u4.jpg", class: "logo" %>
 
-<h1>Users</h1>
+<%= render 'layouts/navbar' %>
+<div classname="user-index">
+  <h1>Users</h1>
 
-<div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user, class: 'accent-button' %>
-    </p>
-  <% end %>
+  <div id="users">
+    <% @users.each do |user| %>
+      <%= render user %>
+      <p>
+        <%= link_to "Show this user", user, class: 'accent-button' %>
+      </p>
+    <% end %>
+  </div>
 </div>
-
-<%= link_to "New user", new_user_path, class: 'default-button'%>

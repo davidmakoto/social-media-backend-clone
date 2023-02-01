@@ -1,12 +1,12 @@
 <div id="<%= dom_id user %>">
   <p>
     <strong>Name:</strong>
-    <%= user.name %>
+    <% if !user.name %>
+      <em>No name provided</em>
+    <% else %>
+      <%= user.name %>
+    <% end %>
   </p>
 
-  <p>
-    <strong>Email:</strong>
-    <%= user.email %>
-  </p>
 
 </div>

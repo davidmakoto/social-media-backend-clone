@@ -1,10 +1,11 @@
-<p style="color: green"><%= notice %></p>
+<div class="user-show">
+  <%= render @user %>
 
-<%= render @user %>
-
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user", @user, method: :delete, class: 'default-button' %>
+  <% if @user == current_user %>
+    <div classname="modify-profile-options">
+      <%= button_to "Edit your profile", edit_user_path(@user), method: :get, class: 'default-button' %>
+      <%= button_to "Delete your profile", @user, method: :delete, class: 'default-button' %>
+    </div>
+  <% end %>
+  <%= button_to "Back to users", users_path, class: 'default-button' %>
 </div>
