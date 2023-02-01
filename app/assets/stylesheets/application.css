@@ -27,6 +27,95 @@
   --purple: rgb(59, 46, 200);
   --vomit-green: rgb(133, 163, 1);
 }
+
+h1 {
+  color: var(--purple);
+}
+p {
+  color: var(--dark-accent);
+}
+ /*            */
+ /* front-page */
+ /*            */
+ .header-sign-in-page {
+  font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 150px;
+  color: var(--vomit-green);
+  display: flex;
+  justify-content: center;
+ }
+ .title-sign-in-page {
+  font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  color: var(--aqua-custom);
+  display: flex;
+  justify-content: center;
+  color: var(--purple);
+  font-size: 150px;
+ }
+ .logo-sign-in-page {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  float: right;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+ }
+
+ .sign-in-container-parent {
+  height: 300px; /* Or whatever */
+}
+.sign-in-page-background {
+
+  background:
+  conic-gradient(from -116.36deg at 25% 75%,rgba(124, 189, 11, 0.09) 52.72deg,#0000 0), conic-gradient(from -116.36deg at 25% 75%,rgba(124, 189, 11, 0.09) 52.72deg,#0000 0) calc(3*88px) calc(88px/2),
+  conic-gradient(from   63.43deg at 75% 75%,rgba(124, 189, 11, 0.09) 52.72deg,#0000 0), conic-gradient(from   63.43deg at 75% 75%,rgba(124, 189, 11, 0.09) 52.72deg,#0000 0) calc(3*88px) calc(88px/2),
+  conic-gradient(
+    rgba(29, 24, 120, 0.16)   63.43deg ,rgba(16, 3, 161, 0.18) 0 116.36deg,
+    rgba(29, 24, 120, 0.16) 0 180deg   ,rgba(16, 3, 161, 0.18) 0 243.43deg,
+    rgba(29, 24, 120, 0.16) 0 296.15deg,rgba(16, 3, 161, 0.18) 0);
+  background-size: 176px 88px;
+  
+  margin: auto;
+}
+
+.sign-in-container-parent {
+  background-color: var(--var-secondary-white);
+  margin: 25px 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: var(--vomit-green) 2px solid;
+}
+.sign-in-container-child {
+  width: 300px;  /* Or whatever */
+  height: 300px; /* Or whatever */
+  margin: auto;  /* Magic! */
+}
+.h2 {
+  font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+}
+
+  /*         */
+ /* BUTTONS */
+ /*         */
+
+
+ .parent {
+  display: flex;
+  height: 300px; /* Or whatever */
+}
+
+.child {
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: auto;  /* Magic! */
+}
+
+ /*         */
+ /* Models  */
+ /*         */
+
 #microposts {
   text-align: center;
   align-items: center;
@@ -67,6 +156,7 @@
 }
 .nav-bar .self-avatar {
   float: right;
+  width: 30px;
 }
 .logo {
   width: 50px;
@@ -321,4 +411,36 @@
   margin: 25px 25px;
   margin-right: 200px;
   margin-left: 200px;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h2 {
+  color: var(--purple);
+}
+
+.flex-grid {
+  color: white;
+  display: flex;
+  margin: auto -1rem 1rem;
+}
+
+.col {
+  background-color: var(--var-MainColor);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.main {
+  flex: 3;
 }
