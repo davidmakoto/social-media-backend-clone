@@ -8,13 +8,13 @@ This project is a bare bones backend app modeled after instagram/twitter. The pu
 * testing ([functional](https://github.com/davidmakoto/social-media-backend-clone/tree/main/test/controllers) and [unit](https://github.com/davidmakoto/social-media-backend-clone/blob/main/test/models/user_test.rb) tests for Users/Microposts)
 * deployment via Heroku
 * CI/CD using Heroku and GitHub
-* authentication via Devise
+* user authentication via Devise
 
 
 ## Dependancies
 
-* Ruby on Rails 3.1.2 ([link to install ruby version manager (rvm)](https://rvm.io/rvm/install)) if not, skip rvm step below
-* PostgreSQL
+* Ruby on Rails 3.1.2 (it's recommended to use [ruby version manager (rvm)](https://rvm.io/rvm/install) however if you prefer not to, instead install Rails 3.12 instead of the rvm step below)
+* SQLite3 1.4
 
 ## Running instructions:
 
@@ -35,6 +35,6 @@ bundle exec rails server
 ## Deployment instructions
 main branch deploys to website
 
-
 ### Resources used:
-Ruby on Rails Tutorial by Michael Hartl
+* Ruby on Rails Tutorial by Michael Hartl
+* [Rails Girls Auth with Devise](https://guides.railsgirls.com/devise)

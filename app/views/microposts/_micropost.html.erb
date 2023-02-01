@@ -1,13 +1,18 @@
-<div id="<%= dom_id micropost %>">
-  <p>
-    <strong>Content:</strong>
-    <%= micropost.content %>
-  </p>
-  <p>
-    <strong>User:</strong>
-    <%= micropost.user.email %>
-  </p>
-  <% if micropost.image.attached? %>
-    <%= image_tag micropost.image, class: "micropost-image" %>
-  <% end %>
+<div class="small-post">
+  <div id="<%= dom_id micropost %>">
+    <div class="avatar wrapper">
+      <img src="/default-avatar.webp" alt="avatar">
+    </div>
+    <div class="poster-name">
+      <% if micropost.user.name %>
+        <%= micropost.user.name %>
+      <% end %>
+      <p> Posted <%= time_ago_in_words(micropost.created_at) %> ago </p>
+    </div>
+    <div class="post-content">
+      <p>
+        <%= micropost.content %>
+      </p>
+    </div>
+  </div>
 </div>

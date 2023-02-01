@@ -1,9 +1,8 @@
-<h1>New post</h1>
-
-<%= render "form", micropost: @micropost %>
-
-<br>
-
-<div>
-  <%= link_to "Back to microposts", microposts_path %>
+<div class="new-post-form">
+  <h1>New post</h1>
+  <%= render "form", micropost: @micropost %>
+  <br>
+  <div>
+    <%= link_to "Back to microposts", microposts_path %>
+  </div>
 </div>

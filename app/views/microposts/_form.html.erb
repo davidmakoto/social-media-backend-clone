@@ -1,5 +1,5 @@
 <%= form_with(model: micropost) do |form| %>
-  user_id: <%= form.hidden_field :user_id, value: current_user.id %>
+  <%= form.hidden_field :user_id, value: current_user.id %>
   <% if micropost.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
@@ -13,10 +13,6 @@
   <div>
     <%= form.label :content, style: "display: block" %>
     <%= form.text_area :content %>
-  </div>
-  <div>
-    <%= form.label :image, style: "display: block" %>
-    <%= form.file_field :image %>
   </div>
   <div>
     <%= form.submit %>
