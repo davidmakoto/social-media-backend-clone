@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :microposts
 
   validates :name,
-  allow_blank: false,
+  allow_blank: true,
   uniqueness: { case_sensitive: false },
   length: { minimum: 3, maximum: 16 },
   format: {
