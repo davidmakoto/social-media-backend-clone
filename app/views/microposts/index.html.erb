@@ -1,15 +1,27 @@
 <!-- <=% render '/layouts/header' %> -->
 
 <%= render 'layouts/navbar' %>
-<h1 class="posts-header">Posts</h1>
 
-<%= button_to "Create New Post", new_micropost_path, method: :get, class: 'yellow-accent-btn' %>
+<div class="container">
+  <div class="flex-grid">
+    <aside class="col sidebar">
+      <h2>The Sidebar</h2>
+      <%= render 'layouts/sidebar' %>
+    </aside>
+    <section class="col main">
+      <h2>The Main Content Area</h2>
 
-<div id="microposts">
-  <% @microposts.to_a.reverse.each do |micropost| %>
-    <%= render micropost %>
-    <%= button_to "Show Post", micropost_path(micropost), method: :get, class: 'vomit-green-accent-btn'%>
-  <% end %>
+      <h1 class="posts-header">Posts</h1>
+
+      <%= button_to "Create New Post", new_micropost_path, method: :get, class: 'yellow-accent-btn' %>
+      
+      <div id="microposts">
+        <% @microposts.to_a.reverse.each do |micropost| %>
+          <%= render micropost %>
+          <%= button_to "Show Post", micropost_path(micropost), method: :get, class: 'vomit-green-accent-btn'%>
+        <% end %>
+      </div>
+
+    </section>
+  </div>
 </div>
-
-<!-- <%= link_to "New micropost", new_micropost_path %> -->
