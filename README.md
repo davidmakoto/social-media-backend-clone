@@ -13,7 +13,7 @@ This project is a bare bones backend app modeled after instagram/twitter. The pu
 
 ## Dependancies
 
-* Ruby on Rails 3.1.2 (it's recommended to use [ruby version manager (rvm)](https://rvm.io/rvm/install)) however if you prefer not to, instead just install Rails 3.12 instead of the rvm step below
+* Ruby on Rails 3.1.2 (it's recommended to use [ruby version manager (rvm)](https://rvm.io/rvm/install) however if you prefer not to, instead install Rails 3.12 instead of the rvm step below)
 * SQLite3 1.4
 
 ## Running instructions:
