@@ -1,10 +1,10 @@
 <%= render @micropost %>
 
 <div>
-  <%= link_to "Edit this micropost", edit_micropost_path(@micropost) %> |
   <%= link_to "Back to microposts", microposts_path %>
 
-  if current_user == @micropost.user
-    <%= button_to "Destroy this micropost", @micropost, method: :delete %>
-  end
+  <% if current_user == @micropost.user %>
+  <%= button_to "Edit this micropost", edit_micropost_path(@micropost), method: :get %>
+  <%= button_to "Destroy this micropost", @micropost, method: :delete %>
+  <% end %>
 </div>
