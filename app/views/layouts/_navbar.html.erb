@@ -1,19 +1,34 @@
 <header>
     <div class="header">
         <div class="nav-bar">
+            <%= image_tag "https://ih1.redbubble.net/image.759429924.9079/flat,750x,075,f-pad,750x1000,f8f8f8.u4.jpg", class: "logo" %>
+
             <div class="user-controls">
                 <p class="navbar-text float-right">
                     <% if user_signed_in? %>
-                    <p>Logged in as <strong><%= current_user.email %></strong>. </p>
+
+                    <p>Logged in as <strong>
+                        <% if current_user.name %>
+                            <%= current_user.name %>
+                        <% else %>
+                            <%= current_user.email %>
+                        <% end %>
+                    </strong>
+                    </p>
+                    <div class="self-avatar avatar wrapper">
+                        <img src="/default-avatar.webp" alt="avatar">
+                    </div>
                     <%= button_to(
-                        "Edit profile",
-                        edit_user_registration_path, class: 'default-button'
+                        "View Profile",
+                        edit_user_registration_path,
+                        class: 'vomit-green-accent-btn',
+                        method: :get
                         ) %>
                     <%= button_to(
                         "Log Out",
                         destroy_user_session_path,
                         method: :delete,
-                        class: "default-button"
+                        class: 'vomit-green-accent-btn',
                         ) %>
                     <% else %>
                     <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
@@ -23,12 +38,7 @@
             </div>
         </div>
         <nav>
-            <ul>
-                <li> <%= link_to "Home", root_path %> </li>
-                <li> <%= link_to "Posts", microposts_path %> </li>
-
-            </ul>
-            
+            <%= button_to "Tweetir", posts_url , class: 'dark-accent-btn', method: :get %>            
         </nav>
     </div>
 </header>
