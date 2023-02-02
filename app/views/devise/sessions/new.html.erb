@@ -6,7 +6,7 @@
     </div>
     <h2> You must log in or sign up to continue </h2>
     <div class="sign-in-modal">
-      <h3>Log in</h3>
+      <h3 class="center">Log in</h3>
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="field center email-field">
           <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email address" %>

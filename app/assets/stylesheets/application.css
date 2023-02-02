@@ -69,8 +69,16 @@ p {
   color: var(--purple);
   font-size: px;
 }
+.new-user-reg h3 {
+  font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: var(--aqua-custom);
+  display: flex;
+  justify-content: center;
+  color: var(--purple);
+  font-size: px;
+}
 .field {
-  font-size: larger;
   font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .field input {
@@ -82,13 +90,6 @@ p {
   padding:10px;
   border-radius:10px;
 }
-.field label {
-  justify-content: left;
-}
-.field #placeholder {
-  color:green;
-}
-
 .email-field {
   margin: 0px;
 }

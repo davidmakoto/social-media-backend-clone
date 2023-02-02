@@ -7,7 +7,7 @@
 
     <h2 class="center"> You must log in or sign up to continue </h2>
     <div class="sign-up-modal">
-      <h3>Sign up</h3>
+      <h3 class="center">Sign up </h3>
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -24,11 +24,11 @@
         </div>
 
         <div class="field center password-field">
-          <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password Confirmation" %>
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password confirmation" %>
         </div>
 
         <div class="actions center">
-          <%= f.submit "Sign up" %>
+          <%= f.submit "Sign up", class: 'red-btn' %>
         </div>
       <% end %>
 
