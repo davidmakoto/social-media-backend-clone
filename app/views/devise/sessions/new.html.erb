@@ -1,21 +1,18 @@
 <div class="sign-in-page">
   <div class="sign-in-page-background">
-    <h1 class="title-sign-in-page">Welcome</h1>
+    <h1 class="title-sign-in-page intro-pages-title">Welcome</h1>
     <div class="logo-sign-in-page">
       <%= image_tag("/images/logo.svg", :class => "blog-logo") %>
     </div>
     <h2> You must log in or sign up to continue </h2>
     <div class="sign-in-modal">
-      <p class="center"> Already have an account? </p>
       <h3>Log in</h3>
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <div class="field center email-field-sign-in">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <div class="field center email-field">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email address" %>
         </div>
-        <div class="field center password-field-sign-in">
-          <%= f.label :password %><br />
-          <%= f.password_field :password, autocomplete: "current-password" %>
+        <div class="field center password-field">
+          <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
         </div>
         <% if devise_mapping.rememberable? %>
           <div class="field center">
