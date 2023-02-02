@@ -10,6 +10,7 @@
 # Ignore the default SQLite database.
 /db/*.pg
 /db/*.SQLite
+/db/development_db
 
 # Ignore all logfiles and tempfiles.
 /log/*
