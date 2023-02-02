@@ -26,6 +26,7 @@
   --aqua: rgb(55, 125, 150);
   --purple: rgb(59, 46, 200);
   --vomit-green: rgb(133, 163, 1);
+  --red-accent: rgb(244, 34, 114);
 }
 
 h1 {
@@ -34,9 +35,39 @@ h1 {
 p {
   color: var(--dark-accent);
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
  /*            */
  /* front-page */
  /*            */
+ .sign-in-page h2 {
+  font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  color: var(--aqua-custom);
+  display: flex;
+  justify-content: center;
+  color: var(--purple);
+  font-size: px;
+ }
+ .sign-in-page h3 {
+  font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: var(--aqua-custom);
+  display: flex;
+  justify-content: center;
+  color: var(--purple);
+  font-size: px;
+}
+.email-field-sign-in {
+  font-size: larger;
+}
+.password-field-sign-in {
+  margin-left: -28.5px;
+  font-size: larger;
+}
  .header-sign-in-page {
   font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 150px;
@@ -54,19 +85,18 @@ p {
   font-size: 150px;
  }
  .logo-sign-in-page {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   display: flex;
-  float: right;
-  margin: 0px 0px 0px 0px;
+  margin: auto;
   padding: 0px 0px 0px 0px;
  }
-
- .sign-in-container-parent {
-  height: 300px; /* Or whatever */
-}
+ .sign-in-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
 .sign-in-page-background {
-
   background:
   conic-gradient(from -116.36deg at 25% 75%,rgba(124, 189, 11, 0.09) 52.72deg,#0000 0), conic-gradient(from -116.36deg at 25% 75%,rgba(124, 189, 11, 0.09) 52.72deg,#0000 0) calc(3*88px) calc(88px/2),
   conic-gradient(from   63.43deg at 75% 75%,rgba(124, 189, 11, 0.09) 52.72deg,#0000 0), conic-gradient(from   63.43deg at 75% 75%,rgba(124, 189, 11, 0.09) 52.72deg,#0000 0) calc(3*88px) calc(88px/2),
@@ -75,25 +105,23 @@ p {
     rgba(29, 24, 120, 0.16) 0 180deg   ,rgba(16, 3, 161, 0.18) 0 243.43deg,
     rgba(29, 24, 120, 0.16) 0 296.15deg,rgba(16, 3, 161, 0.18) 0);
   background-size: 176px 88px;
-  
-  margin: auto;
+  width: 100%;
 }
-
-.sign-in-container-parent {
-  background-color: var(--var-secondary-white);
-  margin: 25px 25px;
-  margin-left: 50px;
-  margin-right: 50px;
-  border: var(--vomit-green) 2px solid;
-}
-.sign-in-container-child {
+.sign-in-modal {
   width: 300px;  /* Or whatever */
-  height: 300px; /* Or whatever */
-  margin: auto;  /* Magic! */
+  height: 350px; /* Or whatever */
+  background-color: var(--var-secondary-white);
+  margin: auto;
+  border: var(--dark-accent) 2px solid;
 }
 .h2 {
   font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 50px;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+
 }
 
   /*         */
@@ -360,6 +388,27 @@ p {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.red-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--red-accent);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.red-btn:hover {background-color: #a31136}
+.red-btn:active {
+  background-color: var(--red);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .user-controls {
   float: right;
 }
