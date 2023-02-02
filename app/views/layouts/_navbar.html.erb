@@ -1,44 +1,42 @@
 <header>
-    <div class="header">
-        <div class="nav-bar">
-            <%= image_tag "/images/logo.svg", class: "logo" %>
-
-            <div class="user-controls">
-                <p class="navbar-text float-right">
-                    <% if user_signed_in? %>
-
-                    <p>Logged in as <strong>
-                        <% if current_user.name %>
-                            <%= current_user.name %>
-                        <% else %>
-                            <%= current_user.email %>
-                        <% end %>
-                    </strong>
-                    </p>
-                    <div class="self-avatar avatar wrapper">
-                        <img src="/default-avatar.jpeg" alt="avatar">
-                    </div>
-                    <%= button_to(
+  <div class="header">
+    <div class="nav-bar">
+      <%= image_tag "/images/logo.svg", class: "logo" %>
+      <div class="user-controls">
+        <p class="navbar-text float-right">
+          <% if user_signed_in? %>
+            <p>Logged in as <strong>
+                <% if current_user.name %>
+                  <%= current_user.name %>
+                <% else %>
+                  <%= current_user.email %>
+                <% end %>
+              </strong>
+            </p>
+            <div class="self-avatar avatar wrapper">
+              <img src="/default-avatar.jpeg" alt="avatar">
+            </div>
+            <%= button_to(
                         "Edit Profile",
                         edit_user_registration_path,
                         class: 'vomit-green-accent-btn',
                         method: :get
                         ) %>
-                    <%= button_to(
+            <%= button_to(
                         "Log Out",
                         destroy_user_session_path,
                         method: :delete,
                         class: 'vomit-green-accent-btn',
                         ) %>
-                    <% else %>
-                    <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-                    <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-                    <% end %>
-                </p>              
-            </div>
-        </div>
-        <nav>
-            <%= button_to "Home", posts_url , class: 'dark-accent-btn', method: :get %>            
-        </nav>
+          <% else %>
+            <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+            <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+          <% end %>
+        </p>
+      </div>
     </div>
+    <nav>
+      <%= button_to "Home", posts_url , class: 'dark-accent-btn', method: :get %>
+    </nav>
+  </div>
 </header>
