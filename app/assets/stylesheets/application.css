@@ -27,6 +27,7 @@
   --purple: rgb(59, 46, 200);
   --vomit-green: rgb(133, 163, 1);
   --red-accent: rgb(244, 34, 114);
+  --faded-grey: rgb(162, 162, 162);
 }
 
 h1 {
@@ -149,9 +150,8 @@ p {
   align-items: center;
   background-color: var(--main-accent-color);
   margin: 25px 25px;
-  margin-left: 200px;
-  margin-right: 200px;
   border:rgb(59, 46, 200) 2px solid;
+  flex-grow: 1;;
 }
 .small-post {
   text-align: left;
@@ -159,8 +159,16 @@ p {
   padding: 25px 25px 25px 25px;
   border: var(--vomit-green) 1px solid;
 }
+.post-info p {
+  color: var(--faded-grey);
+  display: flex;
+  justify-content: right;
+}
 .poster-name {
   float: left;
+}
+.post-time {
+  justify-content: right;
 }
 
 .small-post .avatar {
@@ -175,6 +183,10 @@ p {
  .body {
   background-color: var(--var-secondary-white);
  }
+ .post-content {
+  justify-content: left;
+ }
+
  .nav-bar {
   font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -198,6 +210,28 @@ p {
    margin-top: 20px;
    margin-bottom: 20px;
  }
+ /*         */
+ /* SIDEBAR */
+ /*         */
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: var(--var-MainColor) 2px solid;
+  color: black;
+  margin: 25px 25px;
+  font: 30px;
+  align-items: space-evenly
+
+}
+.sidebar .tags {
+  height: 30px;
+}
+.sidebar li {
+  color:blue;
+}
+
  /*         */
  /* BUTTONS */
  /*         */
@@ -488,8 +522,15 @@ h2 {
 
 .sidebar {
   flex: 1;
+  margin: 0px 0px 0px 0px;
+  margin-left: 0px;
+  padding: 0px 0px 0px 0px;
+  background-color: var(--var-MainColor);
 }
 
 .main {
   flex: 3;
+  margin-left: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  height: 100%;
 }
