@@ -28,6 +28,7 @@
   --vomit-green: rgb(133, 163, 1);
   --red-accent: rgb(244, 34, 114);
   --lavender-custom: rgb(219, 218, 234);
+  --lavender-darker: rgb(210, 211, 248);
   --faded-grey: rgb(162, 162, 162);
 }
 
@@ -46,10 +47,11 @@ p {
  /*            */
  /* front-page */
  /*            */
-.sign-in-page, new-user-reg {
+.reg-page {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .sign-in-page h2 {
   font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -69,16 +71,8 @@ p {
   color: var(--purple);
   font-size: px;
 }
-.new-user-reg h3 {
-  font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  color: var(--aqua-custom);
-  display: flex;
-  justify-content: center;
-  color: var(--purple);
-  font-size: px;
-}
 .field {
+  font-size: larger;
   font-family: 'noto-sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .field input {
@@ -89,6 +83,9 @@ p {
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   padding:10px;
   border-radius:10px;
+}
+.field label {
+  justify-content: left;
 }
 .email-field {
   margin: 0px;
@@ -148,19 +145,18 @@ h1.title-sign-in-page, h1.title-new-user-reg {
  /*              */
  /* registration */
  /*              */
-
 .new-user-reg-background {
   background-color: #d2d3f8;
   opacity: 0.8;
   background-image:  linear-gradient(30deg, #c7c9f7 12%, transparent 12.5%, transparent 87%, #c7c9f7 87.5%, #c7c9f7), linear-gradient(150deg, #c7c9f7 12%, transparent 12.5%, transparent 87%, #c7c9f7 87.5%, #c7c9f7), linear-gradient(30deg, #c7c9f7 12%, transparent 12.5%, transparent 87%, #c7c9f7 87.5%, #c7c9f7), linear-gradient(150deg, #c7c9f7 12%, transparent 12.5%, transparent 87%, #c7c9f7 87.5%, #c7c9f7), linear-gradient(60deg, #c7c9f777 25%, transparent 25.5%, transparent 75%, #c7c9f777 75%, #c7c9f777), linear-gradient(60deg, #c7c9f777 25%, transparent 25.5%, transparent 75%, #c7c9f777 75%, #c7c9f777);
   background-size: 80px 140px;
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-  height: 100vw;
+  width: 100%;
 }
 .sign-up-modal {
   width: 500px;  /* Or whatever */
-  height: 500px; /* Or whatever */
-  background-color: var(--lavender-custom);
+  height: 450px; /* Or whatever */
+  background-color: var(--lavender-darker);
   margin: auto;
   border: var(--dark-accent) 2px solid;
 }
@@ -524,31 +520,20 @@ h1.title-sign-in-page, h1.title-new-user-reg {
   margin-right: 200px;
   margin-left: 200px;
 }
-.new-user-reg {
-  text-align: center;
-  align-items: center;
-  background-color: var(--aqua-custom);
-  margin: 25px 25px;
-  margin-right: 200px;
-  margin-left: 200px;
-}
 .container {
   max-width: 100%;
   margin: auto;
   font-family: sans-serif;
   line-height: 1.5;
 }
-
 h2 {
   color: var(--purple);
 }
-
 .flex-grid {
   color: white;
   display: flex;
   margin: auto -1rem 1rem;
 }
-
 .col {
   background-color: var(--var-MainColor);
   margin-left: 0.5rem;
