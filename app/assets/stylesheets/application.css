@@ -191,7 +191,6 @@ h1.title-sign-in-page, h1.title-new-user-reg {
   text-align: left;
   margin: 25px 25px 25px 25px;
   padding: 25px 25px 25px 25px;
-  border: var(--vomit-green) 1px solid;
 }
 .post-info p {
   color: var(--faded-grey);
