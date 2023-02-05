@@ -1,11 +1,18 @@
 <header>
-  <div class="header">
     <div class="nav-bar">
-      <%= image_tag "/images/logo.svg", class: "logo" %>
+      <%= button_to(image_tag('/images/logo.svg').html_safe, root_path(class: 'logo-nav-bar'), method: :get) %>
+      <div class="search-bar-container">
+        <div class="search-bar">
+          <%= form_with url: "/404", method: :get do |form| %>
+            <%= form.text_field :query, placeholder: "Search for tags or usernames" %>
+            <%= form.submit "Search" %>
+          <% end %>
+        </div>
+      </div>
       <div class="user-controls">
         <p class="navbar-text float-right">
           <% if user_signed_in? %>
-            <p>Logged in as <strong>
+            <p class="user-status">Logged in as <strong>
                 <% if current_user.name %>
                   <%= current_user.name %>
                 <% else %>
@@ -16,18 +23,8 @@
             <div class="self-avatar avatar wrapper">
               <img src="/images/default-avatar.png" alt="avatar">
             </div>
-            <%= button_to(
-                        "Edit Profile",
-                        edit_user_registration_path,
-                        class: 'vomit-green-accent-btn',
-                        method: :get
-                        ) %>
-            <%= button_to(
-                        "Log Out",
-                        destroy_user_session_path,
-                        method: :delete,
-                        class: 'vomit-green-accent-btn',
-                        ) %>
+            <%= button_to("Edit Profile", edit_user_registration_path, class: 'low-profile-button', method: :get) %>
+            <%= button_to("Log Out", destroy_user_session_path, method: :delete, class: 'low-profile-button') %>
           <% else %>
             <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
             <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
@@ -35,8 +32,4 @@
         </p>
       </div>
     </div>
-    <nav>
-      <%= button_to "Home", posts_url , class: 'dark-accent-btn', method: :get %>
-    </nav>
   </div>
-</header>
