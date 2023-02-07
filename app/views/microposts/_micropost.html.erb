@@ -1,21 +1,24 @@
-<div class="small-post">
-  <div id="<%= dom_id micropost %>">
-    <div class="avatar wrapper">
-      <img src="/images/default-avatar.png" alt="avatar">
-    </div>
-    <div class="post-content">
-      <p><%= micropost.content %></p>
-    </div>
-    <div class='post-info'>
-      <div class="poster-name">
-        <% if micropost.user.name %>
-          <p><%= micropost.user.name %></p>
-        <% end %>
-      </div>
-        <div class='post-time'>
-          <p> Posted <%= time_ago_in_words(micropost.created_at) %> ago </p>
+    <div class="small-post">
+      <div id="<%= dom_id micropost %>">
+        <div class="avatar wrapper">
+          <img src="/images/default-avatar.png" alt="avatar">
         </div>
+        <div class="post-content">
+          <p><%= micropost.content %></p>
+        </div>
+        <div class='post-info'>
+          <div class="poster-name">
+            <% if micropost.user.name %>
+              <p><%= micropost.user.name %></p>
+            <% end %>
+          </div>
+            <div class='post-time'>
+              <p> Posted <%= time_ago_in_words(micropost.created_at) %> ago </p>
+            </div>
+          </div>
+        </div>
+          <%= button_to "View Post", micropost_path(micropost), method: :get, class: 'blue-accent-btn-small'%>
+
       </div>
     </div>
   </div>
-</div>

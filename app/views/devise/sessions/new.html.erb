@@ -1,10 +1,8 @@
-<div class="sign-in-page">
+<div class="reg-page">
   <div class="sign-in-page-background">
     <h1 class="title-sign-in-page intro-pages-title">Welcome</h1>
-    <div class="logo-sign-in-page">
-      <%= image_tag("/images/logo.svg", :class => "blog-logo") %>
-    </div>
-    <h2> You must log in or sign up to continue </h2>
+      <%= image_tag("/images/logo.svg", :class => "blog-logo logo-sign-in-page") %>
+    <h2 class="center"> You must log in or sign up to continue </h2>
     <div class="sign-in-modal">
       <h3 class="center">Log in</h3>
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
