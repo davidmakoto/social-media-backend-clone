@@ -4,6 +4,6 @@
 <div class="center">
   <%= button_to "New Post", new_micropost_path, method: :get, class: 'default-button' %>
 </div>
-<% @microposts.each do |micropost| %>
+<% @microposts.to_a.reverse.each do |micropost| %>
   <%= render micropost %>
 <% end %>
