@@ -1,28 +1,35 @@
 <header>
     <div class="nav-bar">
-      <%= button_to(image_tag('/images/logo.svg').html_safe, root_path(class: 'logo-nav-bar'), method: :get) %>
-      <div class="search-bar-container">
-        <div class="search-bar">
-          <%= form_with url: "/404", method: :get do |form| %>
-            <%= form.text_field :query, placeholder: "Search for tags or usernames" %>
-            <%= form.submit "Search" %>
-          <% end %>
+      <%= link_to root_path do %>
+        <%= image_tag "/images/logo.svg", class: "logo-nav-bar" %>
+      <% end %>
+
+    <div class="search-bar-container center">
+
+      <div class="search center">
+            <form action="#">
+                <input type="text"
+                    placeholder="Search for tags or usernames"
+                    name="search">
+                <button>
+                  <img alt="svgImg" class="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAzMCAzMCI+CjxwYXRoIGQ9Ik0gMTMgMyBDIDcuNDg4OTk3MSAzIDMgNy40ODg5OTcxIDMgMTMgQyAzIDE4LjUxMTAwMyA3LjQ4ODk5NzEgMjMgMTMgMjMgQyAxNS4zOTY1MDggMjMgMTcuNTk3Mzg1IDIyLjE0ODk4NiAxOS4zMjIyNjYgMjAuNzM2MzI4IEwgMjUuMjkyOTY5IDI2LjcwNzAzMSBBIDEuMDAwMSAxLjAwMDEgMCAxIDAgMjYuNzA3MDMxIDI1LjI5Mjk2OSBMIDIwLjczNjMyOCAxOS4zMjIyNjYgQyAyMi4xNDg5ODYgMTcuNTk3Mzg1IDIzIDE1LjM5NjUwOCAyMyAxMyBDIDIzIDcuNDg4OTk3MSAxOC41MTEwMDMgMyAxMyAzIHogTSAxMyA1IEMgMTcuNDMwMTIzIDUgMjEgOC41Njk4Nzc0IDIxIDEzIEMgMjEgMTcuNDMwMTIzIDE3LjQzMDEyMyAyMSAxMyAyMSBDIDguNTY5ODc3NCAyMSA1IDE3LjQzMDEyMyA1IDEzIEMgNSA4LjU2OTg3NzQgOC41Njk4Nzc0IDUgMTMgNSB6Ij48L3BhdGg+Cjwvc3ZnPg=="/>
+                </button>
+            </form>
         </div>
       </div>
+
+
       <div class="user-controls">
         <p class="navbar-text float-right">
           <% if user_signed_in? %>
-            <p class="user-status">Logged in as <strong>
-                <% if current_user.name %>
-                  <%= current_user.name %>
-                <% else %>
-                  <%= current_user.email %>
-                <% end %>
-              </strong>
-            </p>
+            <p class="user-status center">
             <div class="self-avatar avatar wrapper">
               <img src="/images/default-avatar.png" alt="avatar">
             </div>
+              <div class="center">
+                <%= current_user.name || current_user.email %>
+              </div>
+            </p>
             <%= button_to("Edit Profile", edit_user_registration_path, class: 'low-profile-button', method: :get) %>
             <%= button_to("Log Out", destroy_user_session_path, method: :delete, class: 'low-profile-button') %>
           <% else %>
@@ -32,4 +39,4 @@
         </p>
       </div>
     </div>
-  </div>
+  </header>

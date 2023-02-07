@@ -1,17 +1,9 @@
 <%= render 'layouts/navbar' %>
-<div class="container">
-  <div class="flex-grid">
-    <aside class="sidebar">
-      <%= render 'layouts/sidebar' %>
-    </aside>
-    <section class="col main no-margin">
-      <h1 class="posts-header">Posts</h1>
-      <%= button_to "Create New Post", new_micropost_path, method: :get, class: 'default-button' %>
-      <div id="microposts">
-        <% @microposts.each do |micropost| %>
-          <%= render micropost %>
-        <% end %>
-      </div>
-    </section>
-  </div>
+<%= render 'layouts/sidebar' %>
+<h1 class="posts-header">Posts</h1>
+<div class="center">
+  <%= button_to "New Post", new_micropost_path, method: :get, class: 'default-button' %>
 </div>
+<% @microposts.each do |micropost| %>
+  <%= render micropost %>
+<% end %>
