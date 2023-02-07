@@ -135,10 +135,11 @@ h1.title-sign-in-page, h1.title-new-user-reg {
     rgba(29, 24, 120, 0.16) 0 296.15deg,rgba(16, 3, 161, 0.18) 0);
   background-size: 176px 88px;
   width: 100%;
+  height: 65vw;
 }
 .sign-in-modal {
   width: 300px;  /* Or whatever */
-  height: 435px; /* Or whatever */
+  height: 415px; /* Or whatever */
   background-color: var(--lavender-custom);
   margin: auto;
   border: var(--dark-accent) 1px solid;
@@ -161,6 +162,7 @@ h1.title-sign-in-page, h1.title-new-user-reg {
   background-size: 80px 140px;
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
   width: 100%;
+  height: 65vw;
 }
 .sign-up-modal {
   width: 500px;  /* Or whatever */
