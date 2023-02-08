@@ -15,4 +15,14 @@ class User < ApplicationRecord
     message: "can only contain letters, numbers, periods or underscores"
   }
   validates_presence_of :email
+
+  class User
+    delegate :can?, :cannot?, to: :ability
+
+    def ability
+      @ability ||= Ability.new(self)
+    end
+  end
+rails
+  some_user.can? :update, @article
 end
