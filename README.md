@@ -1,14 +1,24 @@
 # Blog Clone
 <img src="https://github.com/davidmakoto/social-media-backend-clone/actions/workflows/rubyonrails.yml/badge.svg"> </img>
-
-Live demo: https://tweetir.herokuapp.com
-
 This project is a bare bones backend app modeled after instagram/twitter. The purpose of the app is to show off modern programming practices such as:
 * data validation (in [User/Microposts models](https://github.com/davidmakoto/social-media-backend-clone/tree/main/app/models)) 
 * testing ([functional](https://github.com/davidmakoto/social-media-backend-clone/tree/main/test/controllers) and [unit](https://github.com/davidmakoto/social-media-backend-clone/blob/main/test/models/user_test.rb) tests for Users/Microposts)
 * deployment via Heroku
 * CI/CD using Heroku and GitHub
 * user authentication via Devise
+
+## Demos
+Live demo: https://tweetir.herokuapp.com
+
+<h4 align="center">Auth demo</h4>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/20344260/217395375-f53f9629-909e-4be3-8a00-f20c216c6517.gif" alt="sample app auth demo" />
+</p>
+
+<h4 align="center">CRUD demo</h4>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/20344260/217395387-6d962136-8d13-4272-b3a5-4bf071f76bc8.gif" alt="sample app demo of crud operations on posts" />
+</p>
 
 
 ## Dependancies
