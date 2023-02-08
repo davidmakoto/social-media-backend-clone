@@ -24,7 +24,7 @@ Live demo: https://tweetir.herokuapp.com
 ## Dependancies
 
 * Ruby on Rails 3.1.2 (it's recommended to use [ruby version manager (rvm)](https://rvm.io/rvm/install) however if you prefer not to, instead install Rails 3.12 instead of the rvm step below)
-* SQLite3 1.4
+* SQLite3 v1.4 for development/testing and PostgreSQL v1.35 for production
 
 ## Running instructions:
 
