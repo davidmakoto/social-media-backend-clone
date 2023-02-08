@@ -52,6 +52,8 @@ gem "image_processing", "~> 1.2"
 
 gem "devise"
 
+gem 'cancancan'
+
 group :development, :test do
   gem "pg", "1.3.5"
   gem 'faker', github: 'faker-ruby/faker'
