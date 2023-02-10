@@ -1,5 +1,6 @@
 # Blog Clone
 <img src="https://github.com/davidmakoto/social-media-backend-clone/actions/workflows/rubyonrails.yml/badge.svg"> </img>
+
 This project is a bare bones backend app modeled after instagram/twitter. The purpose of the app is to show off modern programming practices such as:
 * data validation (in [User/Microposts models](https://github.com/davidmakoto/social-media-backend-clone/tree/main/app/models)) 
 * testing ([functional](https://github.com/davidmakoto/social-media-backend-clone/tree/main/test/controllers) and [unit](https://github.com/davidmakoto/social-media-backend-clone/blob/main/test/models/user_test.rb) tests for Users/Microposts)
@@ -41,8 +42,8 @@ bundle exec rails server
 ## Testing
 ```bundle exec rails test```
 
-## Deployment instructions
-main branch deploys to website
+## CI/CD Details
+GitHub Actions runs tests on new commits to main branch which deploys automatically to heroku when passed
 
 ### Resources used:
 * Ruby on Rails Tutorial by Michael Hartl
