@@ -17,9 +17,8 @@ Live demo: https://tweetir.herokuapp.com
 
 <h4 align="center">CRUD demo</h4>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/20344260/217395387-6d962136-8d13-4272-b3a5-4bf071f76bc8.gif" alt="sample app demo of crud operations on posts" />
+  <img src="https://user-images.githubusercontent.com/20344260/218208107-d64ed5e2-8e37-4a06-9995-922866efb870.gif" alt="sample app demo of crud operations on posts" />
 </p>
-
 
 ## Dependancies
 
