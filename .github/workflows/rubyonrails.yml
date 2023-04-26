@@ -38,4 +38,4 @@ jobs:
         run: bundle exec rails db:schema:load
       # Add or replace test runners here
       - name: Run tests
-        run: bundle exec rails test
+        run: bundle exec rspec
