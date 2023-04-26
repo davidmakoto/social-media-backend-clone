@@ -84,7 +84,8 @@ group :test do
   gem "minitest-reporters", "1.4.3"
   gem "guard", "2.18.0"
   gem "guard-minitest", "2.4.6"
-
+  gem "rspec-rails", "5.0.2"
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :production do
